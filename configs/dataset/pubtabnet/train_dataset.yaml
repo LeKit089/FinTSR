@@ -1,0 +1,7 @@
+_target_: src.datamodule.PubTabNet
+root_dir: /home/hj/data/zpl/pubtabnet_part_91150
+label_type: ${dataset.label_type}
+split: train
+json_html: pubtabnet_part_91150.jsonl
+transform: ${dataset.augmentation}
+cell_limit: ${dataset.cell_limit}
