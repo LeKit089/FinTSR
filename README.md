@@ -1,4 +1,4 @@
-# Financial Table Recognition Method Based on Mamba and Transformer
+# A Financial Table Structure Recognition Method Based on Transformer with Attention Enhancement
 
 # Installing
 1. Set up virtual environment (unitable) by running `make .done_venv` in your terminal.
