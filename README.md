@@ -1,5 +1,9 @@
 # A Financial Table Structure Recognition Method Based on Transformer with Attention Enhancement
 
+# Fig1
+The image shows the performance of ground truth, the Unitable method, and our approach in the cell border detection task on a subset of the PubTabNet dataset. The middle shows the problematic tables, the left side displays the corresponding ground truth, and the right side shows the detection results of our method. Specifically, Unitable failed to correctly merge the spanning cells in the first row of the table; it did not recognize the cells in the second row as independent rows; and it exhibited border drift issues in the third row of the table.
+<p align="center"><img src="./fig1.png" alt="wandb" width="700"/></p>
+
 # Installing
 1. Set up virtual environment (unitable) by running `make .done_venv` in your terminal.
 2. Install the mamba package:
@@ -65,6 +69,14 @@ make experiments/mtim_mini_base/.done_pretrain
 
 ## Multi-GPU
 The default setting is a single gpu, i.e., `NGPU := 1` in [Makefile](Makefile). To enable multi-GPU, please launch the above command with the following format: `CUDA_VISIBLE_DEVICES=0,1,2,3 make NGPU=4 experiment/<exp name>/.done_<training type>`.
+
+# Comparison Experiment
+GT denotes the ground truth, a–c present the inference results of existing methods, a TableMaster, b SLANet, and c Unitable, followed by our  method’s test results.
+<p align="center"><img src="./compare.png" alt="wandb" width="700"/></p>
+
+# Ablation Study
+The figure below shows examples of our ablation experiments. We separately add the collaborative attention module, the Mamba module, and the adaptive hybrid loss function to the base model, as illustrated in the figure.
+<p align="center"><img src="./Ablation.png" alt="wandb" width="700"/></p>
 
 ## Citation
 ```bibtex
