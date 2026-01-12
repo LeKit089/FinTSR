@@ -13,12 +13,7 @@ The figure below shows examples of our ablation experiments. We separately add t
 
 # Installing
 1. Set up virtual environment (unitable) by running `make .done_venv` in your terminal.
-2. Install the mamba package:
-
-```bash 
-pip install mamba-ssm[causal-conv1d]  
-``` 
-
+2. Download the corresponding mambaSSM and 1D convolution versions, then install them using pip.
 3. Download all the model weights from [HuggingFace](https://huggingface.co/poloclub/UniTable/tree/main) by running `make .done_download_weights` in your terminal.
 
 # Training
