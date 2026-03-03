@@ -9,7 +9,7 @@ GT denotes the ground truth, a–c present the inference results of existing met
 
 # Ablation Study
 The figure below shows examples of our ablation experiments. We separately add the collaborative attention module, the Mamba module, and the adaptive hybrid loss function to the base model, as illustrated in the figure.
-<p align="center"><img src="./Ablat.png" alt="wandb" width="700"/></p>
+<p align="center"><img src="./Ablation.png" alt="wandb" width="700"/></p>
 
 # Installing
 1. Set up virtual environment (unitable) by running `make .done_venv` in your terminal.
